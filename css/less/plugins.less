@@ -1,0 +1,193 @@
+/*-----------------
+	Plugins 
+-----------------*/
+
+
+/* Huge IT Portfolio */
+[id*="huge-popup-overlay"] {
+	z-index:1040!important;
+}
+
+body [id*="huge_it_portfolio_pupup_element"] {
+	
+	.button-block {
+		display:none!important;
+	}
+	
+	.image-overlay {
+		
+	}
+	
+	[class*="title-block"] {
+		height: auto!important;
+		
+		h3 {
+
+			
+			font-size: 16px!important;
+			line-height: 22px!important;
+			padding: 0 10px!important;
+		}
+	}
+}
+
+body [id*="huge_it_portfolio_content"] [id*="huge_it_portfolio_options"] {
+	margin-bottom: 10px;
+
+	ul {
+		li {
+			a {
+				padding: 3px 10px!important;
+
+				&:hover {
+					background: @bg_primary!important;
+				}
+
+			}
+		}
+	}
+}
+
+
+/* Contact Form 7 Bootstrap Restyling
+**************************************/
+.wpcf7-text{
+	&:extend(.form-control);
+} 
+.wpcf7-textarea {
+	&:extend(.form-control);
+	height: auto;
+}
+.wpcf7-submit {
+	.btn-en;
+}
+
+
+
+// Owl carosuel 
+body .owl-carousel {
+
+	.item  {
+
+		img {
+    		width: auto;
+		}
+	}
+
+	.owl-controls {
+		margin-top: 20px;
+		
+		.owl-pagination {
+
+			.owl-page {
+
+				span {
+					width: 75px;
+					height: 5px;
+					border-radius: 5px;
+					margin: 5px 5px;
+					opacity: 1;
+					border-radius: 20px;
+					background: darken(@bg_light,5%);
+					.transition(background .2s ease)
+				}
+
+				&:hover {
+
+					span {
+						background: darken(@bg_light,10%);
+					}
+				}
+
+				&.active {
+
+					span {
+						background: darken(@bg_primary,0%);
+					}
+
+				}
+			}
+
+		}
+	}
+}
+
+
+// Mailchimp for Wordpress plugin
+form.mc4wp-form {
+
+	.mc4wp-alert {
+		margin-top: 15px;
+
+		&.mc4wp-error p {
+			padding: 12px;
+			background-color: #f2dede;
+		}
+
+		&.mc4wp-notice p {
+			padding: 12px;
+			background-color: #fcf8e3;
+		}
+
+		&.mc4wp-success p {
+			padding: 12px;
+			background-color: #dff0d8;
+		}
+	}
+}
+
+
+// Ultimate Shortcodes 
+.su-accordion {
+
+	.su-spoiler {
+		background: @bg_light;
+
+		.su-spoiler-title {
+			font-size: 16px;
+			font-family: @font_OpenSans;
+			font-weight: bold;
+
+			.su-spoiler-icon {
+				left: 3px;
+			}
+
+		}
+	}
+
+	.su-spoiler-content {
+
+	}
+}
+
+.su-tabs.su-tabs-style-default {
+
+	.su-tabs-nav {
+
+		span {
+			font-size: 16px;
+			color: @color_text;
+		}
+	}
+
+	.su-tabs-pane {
+		font-size: 16px;
+		color: @color_text;
+	}
+
+}
+
+body .su-carousel {
+
+	.su-carousel-slide-title {
+		font-size: 16px;
+		line-height: 24px;
+		padding: 5px 15px;
+		font-style: italic;
+	}
+
+}
+
+
+
+

@@ -1,0 +1,124 @@
+/* 
+
+Custom pages like about, contact etc
+
+*/
+
+
+/* About Us Page
+*****************/
+body.page-about {
+	
+	.entry-header {
+		display: none;
+	}
+
+	blockquote  {
+		
+		p {
+		}
+		
+		&:before {
+		}
+		
+		&:after {
+		}
+	}
+	
+	.team_members {
+		text-align: center;
+	
+		h5 {
+			font-size: 20px;
+			margin: 0;
+			font-weight: 300;
+			line-height: 28px;
+		}
+		
+		em {
+			display: block;
+			color: @color_gray;
+			font-size: 14px;
+			margin-bottom: 15px;
+		}
+		
+		img {
+			border-radius: 100%;
+			margin-bottom:15px;
+		}	
+		
+	}
+	
+	.en_map {
+		margin-bottom: 20px;
+		overflow:hidden;
+	}
+	
+	address {
+		margin-bottom:20px;
+	}
+	
+	.well {
+		text-align:center;
+	}
+}
+
+
+
+/* Contact Us Page
+*****************/
+body.page-contact {
+	
+	.entry-header {
+		display: none;
+	}
+}
+
+
+
+
+/* Search Page Styles */
+body.page-template-page-search,
+body.search-results {
+
+	.search-form {
+		&:extend(.well);
+		text-align:center;
+		
+		// Show screen-reader-text
+		.screen-reader-text {
+			width: auto;
+			height: auto;
+			display: block;
+			overflow: visible;
+			position: relative !important;
+		}
+		
+		label {
+			margin: 0;
+			vertical-align: middle;
+			
+			span {
+				display: none!important;
+			}
+		}
+		
+		input {
+			&:extend(.form-control);
+			
+			&.search-submit {
+				&:extend(.btn, .btn-default, .btn-en);
+				
+				&:hover,
+				&:focus {
+					&:extend(.btn-en:hover);
+				}
+				
+				&:active,
+				&:active:hover {
+					&:extend(.btn-en:active);
+				}
+			}
+		}
+	}
+}

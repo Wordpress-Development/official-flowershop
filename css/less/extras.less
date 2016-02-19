@@ -1,0 +1,120 @@
+
+// Extras (incrase functionality of Theme)
+
+
+
+// Testimonials {
+.ot-testimonial {
+	text-align: center;
+
+	blockquote {
+		padding: 0 60px;
+		margin: 20px 0;
+		border:none;
+		position: relative;
+		text-align: left;
+		font-family: 'Handlee', cursive;
+		font-size: 20px;
+		line-height: 30px;
+
+
+		&:before,
+		&:after {
+			font-family:fontAwesome;
+			color:@color_primary;
+			content: "\f10d";
+			font-size: 28px;
+			position: absolute;
+			top: 0;
+			left: 10px;
+		}
+
+		&:after {
+			content: "\f10e";
+			top: auto;
+			bottom: 0;
+			left: auto;
+			right: 10px;
+		}	
+
+		p {
+			
+		}
+
+	}
+
+	img {
+		margin: 0;
+		border-radius: 100%;
+
+	}
+
+	h4 {
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 24px;
+		margin: 0;
+	}
+
+	cite {
+		color: @color_gray;
+		font-size: 14px;
+		font-style: italic;
+	}
+
+
+}
+
+
+
+/* officialtheme Custom Social Icons */
+#en_custom_social {
+	margin: 0px;
+	padding: 0px;
+	z-index: 999;
+	position: fixed;
+	list-style: outside none none;
+	.transition(all .2s ease);
+	top: 35%;
+	right: -45px;
+	
+	&.social_visible {
+		right: 0;
+	}
+	
+	.social_icon {
+		padding: 1px 0px;
+		overflow: hidden;
+		direction: ltr;
+		border: 0px none;
+		display: block;
+		float: none;
+		
+		right: 0px;
+		position: relative;
+		.transition(all .2s ease);
+		
+		a {
+			width: 32px;
+			height: 32px;
+			padding: 5px;
+			display: block;
+			text-align:center;
+			text-transform: inherit;
+			box-sizing: content-box;
+			.transition(all .2s ease);
+			background-color: @bg_primary;
+			.hex-to-rgba (@bg_primary, .5);
+			background-color: @rgba;
+			
+			&:hover {
+				.hex-to-rgba (@bg_primary, 1);
+				background-color: @rgba;
+			}
+			
+			img {
+				position: relative;
+			}
+		}
+	}
+}

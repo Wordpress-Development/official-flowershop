@@ -1,0 +1,111 @@
+// Typography styles
+
+
+/* General */
+body {
+	font-family: @font_text;
+	background:@bg_body;	
+	color:@color_text;
+	font-size:16px;
+	line-height:26px;
+	-webkit-font-smoothing: antialiased;
+}
+		
+.well {
+	overflow:hidden;
+	border-radius:0;
+	background-image: none;
+	box-shadow: none;
+	background:#f5f5f5;
+	border-color:#ebebeb;
+	border-radius:0;
+}
+
+.btn-en {
+	border:none;
+	background: @bg_primary;
+	text-shadow:1px 1px 1px darken(@bg_primary,10%);
+	color: #fff;
+	border-radius: 0px;
+	font-family: @font_OpenSans;
+	.transition(all .2s ease);
+	
+	&:visited {
+		color:#fff;
+	}
+	
+	&:focus,
+	&:hover {
+		color:#fff;
+		background:lighten(@bg_primary,10%);
+	}
+	
+	&:active,
+	&:active:hover {
+		background:darken(@bg_primary,10%);
+		color:#fff;
+	}
+}
+
+
+// Contextual backgrounds
+.bg-primary,
+.bg-success,
+.bg-info,
+.bg-warning,
+.bg-danger {
+	padding: 15px;
+}
+
+a {
+	color:@color_link;
+	
+	&:visited {
+		color: #609;
+	}
+	
+	&:hover,
+	&:focus {
+		color:darken(@color_link,10%);
+
+
+	}
+	
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color:@color_heading;
+}
+	
+h1,h2,h3,h4 {
+	font-family:@font_heading;
+}
+
+h4 {
+	font-weight: normal;
+    font-size: 22px;
+    line-height: 28px;
+    margin: 0 0 5px;
+}
+
+p {
+	margin-bottom: 18px;
+}
+
+	
+hr {
+	margin-top: 45px;
+    margin-bottom: 40px;
+
+	&.sep {
+		border-top: none;
+		border-bottom: medium none;
+		background: transparent url("../../img/sep.png") no-repeat scroll center center;
+		height: 75px;
+		width: 100%;
+		margin: 25px 0;
+	}
+}
+
+
+
