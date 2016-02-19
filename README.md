@@ -15,7 +15,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 E-commerce Free Wordpress Theme featuring WooCommerce plugin. Fully Responsive and beatiful design. Download it for Free today
 
 == Installation ==
-	
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
 2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
 3. Click Activate to use your new theme right away.
