@@ -1,4 +1,4 @@
-=== Official FlowerShop ===
+#Official FlowerShop
 
 Author: OfficialTheme
 Author URI: http://www.officialthtme.com
