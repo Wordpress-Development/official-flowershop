@@ -2,8 +2,7 @@
 
 E-commerce Free Wordpress Theme featuring WooCommerce plugin. Fully Responsive and beatiful design. Download it for Free today
 
-[Learn more](http://www.officialtheme.com/themes/official-flowershop/)
-
+[Learn more](http://www.officialtheme.com/themes/official-flowershop/) or 
 [View Demo](http://official-flowershop.cloudaccess.host/)
 
 -
