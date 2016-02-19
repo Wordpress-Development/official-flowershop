@@ -21,7 +21,6 @@ E-commerce Free Wordpress Theme featuring WooCommerce plugin. Fully Responsive a
 
 
 == Changelog ==
-
 = 1.0 - February 20 2016 =
 * Initial release
 
