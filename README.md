@@ -1,5 +1,4 @@
-#Official FlowerShop
-
+# Official FlowerShop
 Author: OfficialTheme
 Author URI: http://www.officialthtme.com
 Tags: white, gray, light, one-column, e-commerce, woocommerce, responsive, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-menu, translation-ready
