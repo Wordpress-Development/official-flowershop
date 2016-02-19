@@ -13,9 +13,9 @@ E-commerce Free Wordpress Theme featuring WooCommerce plugin. Fully Responsive a
 
 
 ## Installation
-- In your admin panel, go to Appearance > Themes and click the Add New button.
-- Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
-- Click Activate to use your new theme right away.
+1. In your admin panel, go to Appearance > Themes and click the Add New button.
+2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
+3. Click Activate to use your new theme right away.
 
 
 ## Changelog
