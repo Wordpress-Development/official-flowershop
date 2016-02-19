@@ -1,4 +1,11 @@
 # Official FlowerShop
+
+E-commerce Free Wordpress Theme featuring WooCommerce plugin. Fully Responsive and beatiful design. Download it for Free today
+
+[Learn more](http://www.officialtheme.com/themes/official-flowershop/)
+[View Demo](http://official-flowershop.cloudaccess.host/)
+
+
 * Author: OfficialTheme
 * Author URI: http://www.officialthtme.com
 * Tags: white, gray, light, one-column, e-commerce, woocommerce, responsive, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-menu, translation-ready
@@ -7,10 +14,6 @@
 * Stable tag: 1.0.0
 * License: GPLv2 or later
 * License URI: http://www.gnu.org/licenses/gpl-2.0.html
-
-## Description
-E-commerce Free Wordpress Theme featuring WooCommerce plugin. Fully Responsive and beatiful design. Download it for Free today
-
 
 ## Installation
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
