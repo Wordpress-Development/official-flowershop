@@ -14,7 +14,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 == Description ==
 E-commerce Free Wordpress Theme featuring WooCommerce plugin. Fully Responsive and beatiful design. Download it for Free today
 
-
 == Installation ==
 	
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
