@@ -39,6 +39,8 @@ class WPLessPlugin extends WPPluginToolkitPlugin
     public function __construct(WPLessConfiguration $configuration)
     {
         parent::__construct($configuration);
+        WPLessStylesheet::$upload_dir = $this->configuration->getUploadDir();
+        WPLessStylesheet::$upload_uri = $this->configuration->getUploadUrl();
     }
 
     public function instantiateCompiler()
@@ -69,9 +71,9 @@ class WPLessPlugin extends WPPluginToolkitPlugin
 
         switch( $compiler ){
             case 'less.php':
-                return dirname(__FILE__).'/../vendor/oyejorge/less.php/lessc.inc.php';
+                return dirname(__FILE__).'/vendor/oyejorge/less.php/lessc.inc.php';
             case 'lessphp':
-                return dirname(__FILE__).'/../vendor/leafo/lessphp/lessc.inc.php';
+                return dirname(__FILE__).'/vendor/leafo/lessphp/lessc.inc.php';
             default:
                 return $compiler;
         }
@@ -266,9 +268,6 @@ class WPLessPlugin extends WPPluginToolkitPlugin
         $styles = $this->getQueuedStylesToProcess();
         $force = is_bool($force) && $force ? !!$force : false;
 
-        WPLessStylesheet::$upload_dir = $this->configuration->getUploadDir();
-        WPLessStylesheet::$upload_uri = $this->configuration->getUploadUrl();
-
         if (empty($styles)) {
             return;
         }
@@ -305,7 +304,7 @@ class WPLessPlugin extends WPPluginToolkitPlugin
 
                 // Remove version from uri
                 $parts = parse_url( $style_sheet );
-                $style_sheet = $parts['scheme'] . '://' . $parts['host'] . $parts['path'];
+                $style_sheet = $parts['scheme'] . '://' . $parts['host'] . (!$parts['port'] ? '' : (':' . $parts['port'])) .  $parts['path'];
 
                 // Get extension and set handle for wp_register_style()
                 $pathinfo = pathinfo($style_sheet);
