@@ -1,6 +1,6 @@
 # Official FlowerShop
 
-E-commerce Free Wordpress Theme featuring WooCommerce plugin. Fully Responsive and beatiful design. Download it for Free today
+E-commerce Free WordPres Theme featuring WooCommerce plugin. Fully Responsive and beautiful design. Download it for Free today
 
 [Learn more](http://www.officialtheme.com/themes/official-flowershop/) or 
 [View Demo](http://official-flowershop.cloudaccess.host/)
@@ -22,15 +22,13 @@ E-commerce Free Wordpress Theme featuring WooCommerce plugin. Fully Responsive a
 3. Click Activate to use your new theme right away.
 
 
-## Installing WordPressTheme with Sample Data
-www.officialtheme.com
+## Installing with Sample Data
+In case you want to make your WordPress website exactly as you see on our Demo, please follow the steps below (Step 1-5).
 
-Guide for installing Wordpress with Sample Data so that you can make your website exactly as you see on demo.officialtheme.com.
+Why Sample Data? Because it will save you lots of time with configuration and customizations as you will have already everything pre-setup.
 
-Why? Because it will save you lots of time with configuration and customizations as you will have already everything set-up.
-
-IMPORTANT: Do not use the Sample Data if you already have a running WordPress website. If that is the case, install only our theme and ajust the settings accordially. 
-TIP in this case: We reccomend that you install the Sample Data on a test envirioment on your localhost, just to see the settings and configuraitons we have done.
+IMPORTANT: Do not use the Sample Data if you already have a running WordPress website. If that is the case, install only our theme and adjust the settings manually. 
+TIP: We recommend that you install WordPress with our Sample Data on a test environment (e.g localhost), so you can see the settings and configurations we have done, and apply those on your live website.
 
 
 ### Step 1
@@ -78,20 +76,20 @@ WP Maintenance Mode
 XO10 - WooCommerce Categories widget
 ```
 
-Notice: if a plugin is not installed, please install it manually 
+Notice: if a plugin from the list above was not installed, please install it manually by going in admin panel > plugins.  
 
 
 ### Step 4
-Now it is time to import the sample data into your WordPress site.
+Now, we will import the Sample Data into your WordPress site.
 
-Again, it is important to notice that if you already have a running WordPress site, (you have posts and pages you wish to keep) dont install the sample data files as they may replace your current data.
+Again, it is important to notice that if you already have a running WordPress site, (you have posts and pages you wish to keep) do not install the sample data files as they may replace your current data.
 
-1. In your admin panel go to "Tools > Import > Wordpres"
+1. In your admin panel go to "Tools > Import > WordPress"
 Import this file "official-flowershop.wordpress.(date-is-here).xml"
 (Make sure you select 'Download and import file attachments') from the next step.
 
-2. In your admin panel go to "Apperance > Widgets" and delete all default widgets that are currently positioned on any of theme wigets area (we will update with new ones). 
-Now, go to "Tools > Widget Importer & Exporter" and From the Import option upload this file "official-flowershop.widgets.(date-is-here).wie". 
+2. In your admin panel go to "Apperance > Widgets" and delete all default widgets that are currently positioned on any of wiglets area. 
+Go to "Tools > Widget Importer & Exporter" and From the Import option upload this file "official-flowershop.widgets.(date-is-here).wie". 
 
 3. In your admin panel go to "Smart Slider" and find the "Import slider from different sources" and upload this file "Smart-Slider.(date-is-here).ss3"
 
@@ -114,8 +112,6 @@ Thank you for using our WordPress Themes. If need additional support you are wel
 
 http://officialtheme.com/support
 
-
-
 ## Changelog
 = 1.0 - February 20 2016 =
 * Initial release
@@ -134,6 +130,12 @@ http://officialtheme.com/support
 * OWL Carousel https://github.com/OwlFonk/OwlCarousel, [MIT](http://opensource.org/licenses/MIT)
 * Parallax JS https://github.com/pixelcog/parallax.js/, MIT](http://opensource.org/licenses/MIT)
 * Scroll to Fix https://github.com/bigspotteddog/ScrollToFixed, [MIT](http://opensource.org/licenses/MIT)
+
+## Thank You
+Again thank you for using our WordPress Themes. Our goal is to Deliver simple yet beautiful Free WordPress Themes so that you can finish with ease your next website project. 
+
+Your feedback is important to us. Feel free to write on our Forums or email us through our website
+http://www.officialtheme.com/about/
 
 OfficialTheme Team
 www.officialtheme.com
