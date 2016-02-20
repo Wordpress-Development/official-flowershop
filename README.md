@@ -31,13 +31,13 @@ IMPORTANT: Do not use the Sample Data if you already have a running WordPress we
 TIP: We recommend that you install WordPress with our Sample Data on a test environment (e.g localhost), so you can see the settings and configurations we have done, and apply those on your live website.
 
 
-### Step 1
+#### Step 1
 Download the latest copy of WordPress and install it either in your localhost
 or on your live web server (Please follow the instructions from
 WordPress on how to install it)
 
 
-### Step 2
+#### Step 2
 Install theme package "official-flowershop.(version).zip" as following:
 
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
@@ -45,7 +45,7 @@ Install theme package "official-flowershop.(version).zip" as following:
 3. Click Activate to use your new theme right away.
 
 
-### Step 3
+#### Step 3
 Install the following plugins in the admin panel > plugins
 
 To easily install all plugins at once, install first the plugin below (make sure you active it) "Multi Plugin Installer" by By Nishant Jain, rahulbrilliant2004, tikendramaitry
@@ -79,7 +79,7 @@ XO10 - WooCommerce Categories widget
 Notice: if a plugin from the list above was not installed, please install it manually by going in admin panel > plugins.  
 
 
-### Step 4
+#### Step 4
 Now, we will import the Sample Data into your WordPress site.
 
 Again, it is important to notice that if you already have a running WordPress site, (you have posts and pages you wish to keep) do not install the sample data files as they may replace your current data.
@@ -94,7 +94,7 @@ Go to "Tools > Widget Importer & Exporter" and From the Import option upload thi
 3. In your admin panel go to "Smart Slider" and find the "Import slider from different sources" and upload this file "Smart-Slider.(date-is-here).ss3"
 
 
-### Step 5
+#### Step 5
 Now it is time to adjust all your Theme settings as those found on our Demo site. We are mentioning only those settings that are required but you are welcome to adjust all of them based on your project needs.
 
 In your admin panel go to "Apperance > Customize"
