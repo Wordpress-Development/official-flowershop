@@ -87,7 +87,7 @@
 
 					<span class="sep"> | </span>
 
-					<?php printf( esc_html__( 'Designer: %1$s', 'official-flowershop' ), '<a href="http://www.officialtheme.com" target="_blank" rel="designer">OfficialTheme</a>' ); ?>
+					<?php printf( esc_html__( 'Designer: %1$s', 'official-flowershop' ), '<a href="http://www.officialtheme.com" target="_blank">OfficialTheme</a>' ); ?>
 
 				</p>
 

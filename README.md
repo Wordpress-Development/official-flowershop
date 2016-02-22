@@ -19,9 +19,14 @@ E-commerce Free WordPres Theme featuring WooCommerce plugin. Fully Responsive an
 * License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 ## Installation
+In case you already have a running WordPress site then follow this simple steps to install only our Theme, but if you are starting your website from scratch, we strongly recommend that you use "Installing with Sample Data" guide below (make your website exactly as our Demo)
+
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
 2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
 3. Click Activate to use your new theme right away.
+4. In your admin panel, go to "Appearance > Customize" and adjust the settings based on your needs. Required here is to select under  "Menus > Menu Locations" the corresponding menus which are "Primary > Primary Menu" and "Topmenu > Top Menu"
+
+TIP: We recommend that you install WordPress with our Sample Data from the below guide on a test environment (e.g localhost), so you can see the settings and configurations we have done, and apply those on your live website.
 
 
 ## Installing with Sample Data
@@ -30,7 +35,6 @@ In case you want to make your WordPress website exactly as you see on our Demo, 
 Why Sample Data? Because it will save you lots of time with configuration and customizations as you will have already everything pre-setup.
 
 IMPORTANT: Do not use the Sample Data if you already have a running WordPress website. If that is the case, install only our theme and adjust the settings manually. 
-TIP: We recommend that you install WordPress with our Sample Data on a test environment (e.g localhost), so you can see the settings and configurations we have done, and apply those on your live website.
 
 
 #### Step 1
@@ -82,7 +86,7 @@ Notice: if a plugin from the list above was not installed, please install it man
 
 
 #### Step 4
-Now, we will import the Sample Data into your WordPress site.
+Now, we will import the Sample Data into your WordPress site. The Sample Data files can be found inside our theme package, under the "sample-data" directory.
 
 Again, it is important to notice that if you already have a running WordPress site, (you have posts and pages you wish to keep) do not install the sample data files as they may replace your current data.
 
