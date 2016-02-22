@@ -54,9 +54,11 @@ Install theme package "official-flowershop.(version).zip" as following:
 #### Step 3
 Install the following plugins in the admin panel > plugins
 
-To easily install all plugins at once, install first the plugin below (make sure you active it) "Multi Plugin Installer" by By Nishant Jain, rahulbrilliant2004, tikendramaitry
+To easily install all plugins at once, please install first 
+"Multi Plugin Installer" by By Nishant Jain, rahulbrilliant2004, tikendramaitry
+Make sure you have activated it.
 
-Open the "Multi Plugin Installer" that you have just installed from the menu on the left and enter the following list to install all plugins at once.
+Open the "Multi Plugin Installer" from the menu on the left and enter the following list to install all plugins at once.
 
 
 ```
@@ -82,19 +84,25 @@ WP Maintenance Mode
 XO10 - WooCommerce Categories widget
 ```
 
-Notice: if a plugin from the list above was not installed, please install it manually by going in admin panel > plugins.  
+
+**Notice 1:** if a plugin from the list above was not installed, please install it manually by going in admin panel > plugins. 
+(After some test we noticed that only "Custom Classes" plugin failed to install, if so please search for "Custom Classes by Justin Tadlock") 
+
+**Notice 2:** We noticed that "Smart Slider 3" plugin failed to show correctly. If that is the case, simply go to your admin panel > Plugins, and deactivate "Smart Slider 3" and activate again. It will solve the issue and you will be able to see this plugin on the admin menu on the left.
 
 
 #### Step 4
-Now, we will import the Sample Data into your WordPress site. The Sample Data files can be found inside our theme package, under the "sample-data" directory.
+Now, we will import the Sample Data into your WordPress site. 
+
+**The Sample-Data files can be found inside our theme package, under the "sample-data" folder directory.**
 
 Again, it is important to notice that if you already have a running WordPress site, (you have posts and pages you wish to keep) do not install the sample data files as they may replace your current data.
 
 1. In your admin panel go to "Tools > Import > WordPress"
 Import this file "official-flowershop.wordpress.(date-is-here).xml"
-(Make sure you select 'Download and import file attachments') from the next step.
+**Notice:** Make sure you select "Download and import file attachments" when importing, to import all media.
 
-2. In your admin panel go to "Apperance > Widgets" and delete all default widgets that are currently positioned on any of wiglets area. 
+2. In your admin panel go to "Apperance > Widgets" and delete all default widgets that are currently positioned on any of widgets area. 
 Go to "Tools > Widget Importer & Exporter" and From the Import option upload this file "official-flowershop.widgets.(date-is-here).wie". 
 
 3. In your admin panel go to "Smart Slider" and find the "Import slider from different sources" and upload this file "Smart-Slider.(date-is-here).ss3"

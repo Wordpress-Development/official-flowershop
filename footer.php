@@ -12,7 +12,7 @@
 
 ?>
 			
-			<?php if ( get_theme_mod( 'envisintheme_hidefrontpage_setting' ) == 'no' || is_front_page()==false ) { ?>
+			<?php if ( get_theme_mod( 'envisintheme_hidefrontpage_setting','no' ) == 'no' || is_front_page()==false ) { ?>
 	 		</div>
 			
 		</div>
@@ -39,7 +39,7 @@
 	<!-- slider Widget Area-->
 	<?php if (is_active_sidebar('en_widgets_area_slider')) : ?>
 
-	<?php if (get_theme_mod('officialtheme_slider_parallax')=='yes' && get_theme_mod( 'officialtheme_slider'))  { ?>	
+	<?php if (get_theme_mod('officialtheme_slider_parallax','yes')=='yes' && get_theme_mod( 'officialtheme_slider'))  { ?>	
 	<div id="official-slider" class="parallax-window" data-parallax="scroll" data-speed="0.2" data-image-src="<?php echo esc_url( get_theme_mod( 'officialtheme_slider' ) ); ?>">
 	
 	<?php } else { ?>
@@ -105,7 +105,7 @@
 	    
 	</footer>
 
-	<?php if (get_theme_mod('officialtheme-gotop')=='true')  { ?>	
+	<?php if (get_theme_mod('officialtheme-gotop','true')=='true')  { ?>	
 	<a href="#" id="official-top-link" title="<?php printf (esc_html__( 'Go to Top', 'official-flowershop')); ?>">&uarr;</a>
 	<?php } ?>
 	

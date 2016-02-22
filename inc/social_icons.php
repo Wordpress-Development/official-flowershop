@@ -19,10 +19,12 @@
 	$youtube_link = $officialtheme_social_link['youtube'];
 	
 	// Store Parameter for displaying or not the Social Icons
-	$officialtheme_social_control = get_theme_mod( 'officialtheme_social_control' );
+	//$officialtheme_social_control = get_theme_mod( 'officialtheme_social_control' );
 
 	// If Social Control is set to true, show social Icons, else show nothing
-	if( $officialtheme_social_control == 'true' ) : ?>
+	if ( get_theme_mod( 'officialtheme_social_control','true' ) == 'true' ) : ?>
+
+
     	<ul id="en_custom_social" class="<?php if (!is_active_sidebar('en_widgets_area_slideshow')) : echo "social_visible"; else : endif; ?>">
         	<li class="social_icon social_first">
             	<a href="<?php echo $facebook_link; ?>" target="_blank">

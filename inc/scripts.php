@@ -16,7 +16,7 @@ function officialtheme_scripts_footer() { ?>
 			jQuery('[data-toggle="tooltip"]').tooltip(); 
 	        
 	        // Fixed header
-			<?php if ( get_theme_mod( 'fixed_header_setting' ) == 'fixed' ) : ?>
+			<?php if ( get_theme_mod( 'fixed_header_setting','fixed') == 'fixed' ) : ?>
 			jQuery(document).ready(function() {
 			  jQuery('#header').scrollToFixed();
 			});
@@ -45,15 +45,15 @@ function officialtheme_scripts_footer() { ?>
 					//itemsTablet: [768,2], //2 items between 600 and 0
 					//itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
 
-					autoPlay:  <?php echo get_theme_mod( 'officialtheme_slider_autoplay'); ?>,
-					navigation: <?php echo get_theme_mod( 'officialtheme_slider_navigation'); ?>,
-					pagination: <?php echo get_theme_mod( 'officialtheme_slider_pagination'); ?>
+					autoPlay:  <?php echo get_theme_mod( 'officialtheme_slider_autoplay','true'); ?>,
+					navigation: <?php echo get_theme_mod( 'officialtheme_slider_navigation','false'); ?>,
+					pagination: <?php echo get_theme_mod( 'officialtheme_slider_pagination','false'); ?>
 			  
 			});
 			<?php endif; ?>
 
 			// Social Icons JS
-			<?php if ( get_theme_mod( 'officialtheme_social_control' ) == 'true' ) : ?>
+			<?php if ( get_theme_mod( 'officialtheme_social_control','true' ) == 'true' ) : ?>
 			jQuery(window).scroll(function(){
 
                 if ( jQuery(this).scrollTop() > jQuery("#slideshow").height() ) {
@@ -66,7 +66,7 @@ function officialtheme_scripts_footer() { ?>
             <?php endif; ?>
 
 
-			<?php if (get_theme_mod('officialtheme-gotop')=='true')  { ?>
+			<?php if (get_theme_mod('officialtheme-gotop','true')=='true')  { ?>
 				if (jQuery('#official-top-link').length) {
 			    var scrollTrigger = 700, // px
 

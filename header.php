@@ -48,7 +48,7 @@
         
         <nav class="navbar navbar-default">
         
-            <div class="<?php if ( get_theme_mod( 'fixed_header_setting' ) == 'fixed' ) : echo "container"; else : echo "container"; endif; ?>">
+            <div class="<?php if ( get_theme_mod( 'fixed_header_setting','fixed' ) == 'fixed' ) : echo "container"; else : echo "container"; endif; ?>">
             
                 <!-- Logo and MenuToggle Button -->
                 <div class="navbar-header">
@@ -202,7 +202,7 @@
     <?php endif; ?>
 
 
-    <?php if ( get_theme_mod( 'envisintheme_hidefrontpage_setting' ) == 'no' || is_front_page()==false ) { ?>
+    <?php if ( get_theme_mod( 'envisintheme_hidefrontpage_setting','no' ) == 'no' || is_front_page()==false ) { ?>
 	<section id="content_outter" class="site-content">
 
 		<div class="container">
