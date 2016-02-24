@@ -20,11 +20,14 @@ if (post_password_required()) {
 	<?php // You can start editing here -- including this comment! ?>
 
 	<?php if (have_comments()) { ?>
-		<h2 class="comments-title">
+
+		<hr>
+		
+		<h3 class="comments-title">
 			<?php
 			printf(_nx('One comment on &ldquo;%2$s&rdquo;', '%1$s comments on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'official-flowershop'), number_format_i18n(get_comments_number()), '<span>' . get_the_title() . '</span>');
 			?> 
-		</h2>
+		</h3>
 
 		<?php if (get_comment_pages_count() > 1 && get_option('page_comments')) { // are there comments to navigate through  ?> 
 			<h3 class="screen-reader-text sr-only"><?php _e('Comment navigation', 'official-flowershop'); ?></h3>
@@ -95,7 +98,7 @@ if (post_password_required()) {
 	ob_start();
 	comment_form(
 		array(
-			'class_submit' => 'btn btn-primary',
+			'class_submit' => 'btn btn-en',
 			'fields' => array(
 				'author' => '<div class="form-group">' . 
 							'<label class="control-label col-md-2" for="author">' . __('Name', 'official-flowershop') . ($req ? ' <span class="required">*</span>' : '') . '</label> ' .

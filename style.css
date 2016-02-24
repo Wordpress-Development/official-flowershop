@@ -3,30 +3,36 @@ Theme Name: Official FlowerShop
 Theme URI: http://www.officialtheme.com/themes/official-flowershop/
 Author: OfficialTheme
 Author URI: http://www.officialtheme.com
-Description: E-commerce Free Wordpress Theme featuring WooCommerce plugin. Fully Responsive and beatiful design. Download it for Free today
+Description: E-commerce Free Wordpress Theme featuring WooCommerce plugin. Fully Responsive and beautiful design.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: official-flowershop
 Domain Path: /languages/
-Tags: white, gray, light, white, one-column, two-columns, three-columns, left-sidebar, right-sidebar, responsive-layout, custom-colors, custom-menu, theme-options, translation-ready
+Tags: white, light, white, one-column, two-columns, three-columns, left-sidebar, right-sidebar, responsive-layout, custom-colors, custom-menu, theme-options, translation-ready
+*/
+
+
+/* 
+We are using LESS processor to handle CSS styles for this Theme.
+The files are located in 'css/less' folder inside the theme. 
+We strongly reccomend that you dont directly edit those files as your changes might lost when you update theme.
+
+- If you want to edit theme styles using LESS simply create a new file called 'custom.less' inside the 'css/less' folder
+- If you are not familiar with LESS, you may craete a new file called 'custom.css' inside the 'css' folder.
 
 */
 
 
-/* We are using LESS processor to handle CSS styles,
-please check inside the 'css/less' folder to find 
-and edit the styles for this WordPress Theme */
+/* 
+For any support questions please use our forums at 'http://www.officialtheme.com/support' 
+*/
 
 
-/* For any support questions please use our 
-forums at 'officialtheme.com/support' */
 
-
-// Default Wordpress Stylings
 
 /*
-Required WordPress CSS
+* Required WordPress CSS
 */
 
 .alignleft {
@@ -153,28 +159,4 @@ Required WordPress CSS
 	top: 5px;
 	width: auto;
 	z-index: 100000; /* Above WP toolbar. */
-}
-
-
-#comments .comment-navigation {
-	margin-bottom: 0;
-}
-#comments .comment-navigation-below {
-	margin-bottom: 20px;
-	margin-top: 15px;
-}
-#comments .media-list li .media {
-	margin-top: 15px;
-}
-#comments .media-list li .media .media-body {
-	border: 1px solid #eee;
-	padding: 10px;
-}
-#comments .media-list li .media .media-body .comment-author {
-	font-size: 12px;
-	margin-bottom: 10px;
-}
-#comments .media-list ul.children {
-	list-style: none;
-	margin-left: 2.5em;
 }

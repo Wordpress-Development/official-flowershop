@@ -9,7 +9,9 @@
  * @package official-flowershop
  */
 
-?><!DOCTYPE html>
+?>
+
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -27,6 +29,8 @@
 		<![endif]-->
 	
 		<?php do_action('before'); ?> 
+
+        <a class="screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'official-flowershop' ); ?></a>
 
 		<section id="topbar">
 

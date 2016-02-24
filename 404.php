@@ -8,7 +8,7 @@
  */
 
 
-<?php get_header(); ?> 
+get_header(); ?> 
 
 	<div class="col-md-12 content-area" id="main-column">
 		

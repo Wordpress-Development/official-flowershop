@@ -7,7 +7,6 @@ E-commerce Free WordPres Theme featuring WooCommerce plugin. Fully Responsive an
 [Learn more](http://www.officialtheme.com/themes/official-flowershop/) or 
 [View Demo](http://official-flowershop.cloudaccess.host/)
 
-#### Info
 
 * Author: OfficialTheme
 * Author URI: http://www.officialthtme.com
@@ -33,7 +32,7 @@ In case you want to make your WordPress website exactly as you see on our Demo, 
 
 Why Sample Data? Because it will save you lots of time with configuration and customizations as you will have already everything pre-setup.
 
-IMPORTANT: Do not use the Sample Data if you already have a running WordPress website. If that is the case, install only our theme and adjust the settings manually. 
+**IMPORTANT:** Do not use the Sample Data if you already have a running WordPress website. If that is the case, install only our theme and adjust the settings manually. 
 
 
 #### Step 1
@@ -122,6 +121,16 @@ In your admin panel go to "Apperance > Customize"
 - Slider Background (select an image from your own or you may use the theme's one from the media library)
 -  Accepted Cards Image (select your own image or you may use the theme's one from the media library)
 -  Menus > Menu Locations and select "Primary > Primary Menu" and "Topmenu > Top Menu"
+
+
+## Customization
+We are using LESS processor to handle CSS styles for this Theme.
+Files are located in 'css/less' folder inside the theme directory. 
+We strongly reccomend that you dont directly edit those files as your changes might be lost when you update your theme.
+
+There are two ways to edit styles:
+* **Wtih LESS-CSS** simply create a new file called 'custom.less' inside the 'css/less' folder and add your Less styles there (or just CSS for that matter)
+* **With CSS** If you are not familiar with LESS-CSS, you may create a new file called 'custom.css' inside the 'css' folde and add your CSS styles there
 
 
 ## Support

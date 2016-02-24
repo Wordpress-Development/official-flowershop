@@ -77,6 +77,80 @@
 	}
 }
 
+// Comments
+.comments-area {
+
+	.comments-title {
+
+	}
+
+	ul.media-list {
+		margin:0 0 35px;
+
+		li.comment {
+
+			article.comment-body {
+				padding: 10px;
+				border:1px solid darken(@bg_light, 5%);
+				margin: 10px 0;
+
+				.comment-content {
+
+					.comment-author {
+
+						.comment-metadata {
+							font-size: 14px;
+							font-style: italic;
+
+							.edit-link {
+								margin: 0 0 0 10px;
+								float:right;	
+							}		
+						}
+
+						cite {
+							font-size: 14px;
+							font-style: italic;
+							font-weight: bold;
+						}
+
+						span.says {
+							font-size: 14px;
+							font-style: italic;
+							font-weight: bold;
+						}
+					}
+
+					a.comment-reply-link {
+						background: @bg_light;
+						border-color: darken(@bg_light, 10%);
+						color: @color_text;
+					}
+				}
+			}
+
+
+			ul.children {
+				list-style: none;
+			}
+
+
+			&.comment-author-admin > article.comment-body {
+				background-color: lighten(@bg_primary, 25%);
+				border-color: lighten(@bg_primary, 15%);
+			}
+
+
+		}
+	}
+
+	.comment-respond {
+		margin-bottom: 45px;
+	}
+}
+
+
+
 // Pagination
 ul.pagination {
 
