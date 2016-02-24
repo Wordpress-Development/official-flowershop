@@ -17,6 +17,10 @@ if ( ! function_exists( 'official_flowershop_setup' ) ) :
  * as indicating support for post thumbnails.
  */
 function official_flowershop_setup() {
+
+	// Set content width
+	if ( ! isset( $content_width ) ) $content_width = 1170;
+
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
@@ -73,19 +77,13 @@ function official_flowershop_setup() {
 		'link',
 	) );
 
-	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'official_flowershop_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	) ) );
-
 
 	/*
 	* OfficialTheme setup
 	*/
 
 	// WP Less initialize and add variables
-	define('WP_LESS_COMPILATION', 'always');
+	define('WP_LESS_COMPILATION', 'deep');
 
 	$less = WPLessPlugin::getInstance();
 	$less->dispatch();
@@ -154,6 +152,9 @@ require get_template_directory() . '/inc/widgets-area.php';
 // Scripts 
 require get_template_directory() . '/inc/scripts.php';
 
+// Admin 
+require get_template_directory() . '/inc/admin.php';
+
 
 // Extends
 if ( class_exists( 'WooCommerce' ) ) {
@@ -212,6 +213,20 @@ add_action( 'wp_enqueue_scripts', 'officialtheme_scripts_styles' );
 
 
 
+/**
+ *  Editor Styles
+ *
+ * @link https://codex.wordpress.org/Function_Reference/add_editor_style
+ *
+ */
+
+function officialtheme_add_editor_styles() {
+    add_editor_style( 'css/custom-editor-style.css' );
+}
+
+add_action( 'admin_init', 'officialtheme_add_editor_styles' );
+
+
 
 /**
  * WOOcommerce plugin
@@ -249,6 +264,7 @@ add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_arg
 	$args['columns'] = 3; // arranged in 2 columns
 	return $args;
 }
+
 
 
 

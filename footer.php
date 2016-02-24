@@ -83,7 +83,7 @@
 			<div id="copyright">
 
 				<p class="copyright-info">
-					<?php _e( '&copy;'); ?> <?php echo date('Y'); ?> <?php echo get_bloginfo( 'name' ); ?>
+					<?php echo '&copy'; ?> <?php echo date('Y'); ?> <?php echo get_bloginfo( 'name' ); ?>
 
 					<span class="sep"> | </span>
 
@@ -92,11 +92,11 @@
 				</p>
 
 
-				<?php // if (!get_theme_mod( 'officialtheme_cards')=="")  { ?>	
+				<?php  if (get_theme_mod( 'officialtheme_cards')!="")  { ?>	
 				<p class="copyright-cards">
 					<img src="<?php echo esc_url (get_theme_mod( 'officialtheme_cards')); ?>" alt="<?php _e( 'Accepted Cards','official-flowershop' ); ?>" class="img-responsive" />	
 				</p>
-				<?php // } ?>	
+				<?php } ?>	
 
 			</div>
 	

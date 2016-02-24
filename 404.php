@@ -34,7 +34,7 @@
 						  <input type="text" name="s" value="<?php echo esc_attr(get_search_query()); ?>" placeholder="<?php echo esc_attr_x('Search &hellip;', 'placeholder', 'official-flowershop'); ?>" title="<?php echo esc_attr_x('Search &hellip;', 'label', 'official-flowershop'); ?>" class="form-control" />
 						  </div>
 							  
-					  <button type="submit" class="btn btn-default"><?php _e('Search', 'official-flowershoptstrap-basic'); ?></button>
+					  <button type="submit" class="btn btn-default"><?php _e('Search', 'official-flowershop'); ?></button>
 
 
 					</form>

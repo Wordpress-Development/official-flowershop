@@ -1,0 +1,18 @@
+/**
+ *  Editor Styles
+ *
+ * @link https://codex.wordpress.org/Function_Reference/add_editor_style
+ *
+ * @package official-flowershop
+ */
+
+body#tinymce.wp-editor {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body#tinymce.wp-editor a {
+
+}

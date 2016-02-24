@@ -15,7 +15,7 @@
 		 * The other part of this pager is in inc/template-tags.php function name official_flowershop_LinkPagesLink() which is called by wp_link_pages_link filter.
 		 */
 		wp_link_pages(array(
-			'before' => '<div class="page-links">' . __('Pages:', 'bootstrap-basic') . ' <ul class="pagination">',
+			'before' => '<div class="page-links">' . __('Pages:', 'official-flowershop') . ' <ul class="pagination">',
 			'after'  => '</ul></div>',
 			'separator' => ''
 		));
@@ -27,7 +27,7 @@
 		<div class="entry-meta-category-tag">
 			<?php
 				/* translators: used between list items, there is a space after the comma */
-				$categories_list = get_the_category_list(__(', ', 'bootstrap-basic'));
+				$categories_list = get_the_category_list(__(', ', 'official-flowershop'));
 				if (!empty($categories_list)) {
 			?> 
 			<span class="cat-links">
@@ -37,7 +37,7 @@
 
 			<?php
 				/* translators: used between list items, there is a space after the comma */
-				$tags_list = get_the_tag_list('', __(', ', 'bootstrap-basic'));
+				$tags_list = get_the_tag_list('', __(', ', 'official-flowershop'));
 				if ($tags_list) {
 			?> 
 			<span class="tags-links">

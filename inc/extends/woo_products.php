@@ -27,16 +27,16 @@ class OFFICIAL_Widget_Products extends WC_Widget {
 	 */
 	public function __construct() {
 		$this->widget_cssclass    = '';
-		$this->widget_description = __( 'Display a list of your products on your site.', 'woocommerce' );
+		$this->widget_description = __( 'Display a list of your products on your site.', 'official-flowershop' );
 		$this->widget_id          = 'official_woocommerce_products';
-		$this->widget_name        = __( 'Official WooCommerce Products (slider)', 'woocommerce' );
+		$this->widget_name        = __( 'Official WooCommerce Products (slider)', 'official-flowershop' );
 		
 		$this->settings           = array(
 
 			'title'  => array(
 				'type'  => 'text',
-				'std'   => __( 'Products', 'woocommerce' ),
-				'label' => __( 'Title', 'woocommerce' )
+				'std'   => __( 'Products', 'official-flowershop' ),
+				'label' => __( 'Title', 'official-flowershop' )
 			),
 
 			'number' => array(
@@ -45,52 +45,52 @@ class OFFICIAL_Widget_Products extends WC_Widget {
 				'min'   => 1,
 				'max'   => 30,
 				'std'   => 5,
-				'label' => __( 'Total number of products to show', 'woocommerce' )
+				'label' => __( 'Total number of products to show', 'official-flowershop' )
 			),
 
 			'show' => array(
 				'type'  => 'select',
 				'std'   => '',
-				'label' => __( 'Show', 'woocommerce' ),
+				'label' => __( 'Show', 'official-flowershop' ),
 				'options' => array(
-					''         => __( 'All Products', 'woocommerce' ),
-					'featured' => __( 'Featured Products', 'woocommerce' ),
-					'onsale'   => __( 'On-sale Products', 'woocommerce' ),
+					''         => __( 'All Products', 'official-flowershop' ),
+					'featured' => __( 'Featured Products', 'official-flowershop' ),
+					'onsale'   => __( 'On-sale Products', 'official-flowershop' ),
 				)
 			),
 
 			'orderby' => array(
 				'type'  => 'select',
 				'std'   => 'date',
-				'label' => __( 'Order by', 'woocommerce' ),
+				'label' => __( 'Order by', 'official-flowershop' ),
 				'options' => array(
-					'date'   => __( 'Date', 'woocommerce' ),
-					'price'  => __( 'Price', 'woocommerce' ),
-					'rand'   => __( 'Random', 'woocommerce' ),
-					'sales'  => __( 'Sales', 'woocommerce' ),
+					'date'   => __( 'Date', 'official-flowershop' ),
+					'price'  => __( 'Price', 'official-flowershop' ),
+					'rand'   => __( 'Random', 'official-flowershop' ),
+					'sales'  => __( 'Sales', 'official-flowershop' ),
 				)
 			),
 
 			'order' => array(
 				'type'  => 'select',
 				'std'   => 'desc',
-				'label' => _x( 'Order', 'Sorting order', 'woocommerce' ),
+				'label' => _x( 'Order', 'Sorting order', 'official-flowershop' ),
 				'options' => array(
-					'asc'  => __( 'ASC', 'woocommerce' ),
-					'desc' => __( 'DESC', 'woocommerce' ),
+					'asc'  => __( 'ASC', 'official-flowershop' ),
+					'desc' => __( 'DESC', 'official-flowershop' ),
 				)
 			),
 
 			'hide_free' => array(
 				'type'  => 'checkbox',
 				'std'   => 0,
-				'label' => __( 'Hide free products', 'woocommerce' )
+				'label' => __( 'Hide free products', 'official-flowershop' )
 			),
 
 			'show_hidden' => array(
 				'type'  => 'checkbox',
 				'std'   => 0,
-				'label' => __( 'Show hidden products', 'woocommerce' )
+				'label' => __( 'Show hidden products', 'official-flowershop' )
 			),
 
 			// Owlcarousel settings
@@ -100,36 +100,36 @@ class OFFICIAL_Widget_Products extends WC_Widget {
 				'min'   => 1,
 				'max'   => 8,
 				'std'   => 4,
-				'label' => __( 'Number of products in a slide')
+				'label' => __( 'Number of products in a slide','official-flowershop')
 			),
 
 			'owl_autoplay' => array(
 				'type'  => 'select',
 				'std'   => 'false',
-				'label' => __( 'Enable Autoplay?' ),
+				'label' => __( 'Enable Autoplay?','official-flowershop' ),
 				'options' => array(
-					'true'  => __( 'Yes'),
-					'false' => __( 'No'),
+					'true'  => __( 'Yes','official-flowershop'),
+					'false' => __( 'No','official-flowershop'),
 				)
 			),
 
 			'owl_navigation' => array(
 				'type'  => 'select',
 				'std'   => 'false',
-				'label' => __( 'Enable Naivgation (prev/next)?' ),
+				'label' => __( 'Enable Naivgation (prev/next)?','official-flowershop' ),
 				'options' => array(
-					'true'  => __( 'Yes'),
-					'false' => __( 'No'),
+					'true'  => __( 'Yes','official-flowershop'),
+					'false' => __( 'No','official-flowershop'),
 				)
 			),
 
 			'owl_pagination' => array(
 				'type'  => 'select',
 				'std'   => 'true',
-				'label' => __( 'Enable Pagination (bullets)?' ),
+				'label' => __( 'Enable Pagination (bullets)?','official-flowershop' ),
 				'options' => array(
-					'true'  => __( 'Yes'),
-					'false' => __( 'No'),
+					'true'  => __( 'Yes','official-flowershop'),
+					'false' => __( 'No','official-flowershop'),
 				)
 			),
 

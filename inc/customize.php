@@ -17,41 +17,55 @@ function officialtheme_customize ( $wp_customize ) {
 
 	) );
 	
-	$wp_customize->add_setting( 'officialtheme_bg_primary' );
+	// Bg Primary
+	$wp_customize->add_setting( 'officialtheme_bg_primary', array(
+	    'default' => '#A0D4A4',
+	    'transport'   => 'refresh',
+	    'sanitize_callback' => 'sanitize_hex_color',
+	) );
 
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize,  'officialtheme_bg_primary', array(
-		'default'     => '#A0D4A4',
-		'transport'   => 'refresh',
 		'label'      => __( 'Primary Color', 'official-flowershop' ),
 		'section'    => 'officialtheme_color_section',
 		'settings'   => 'officialtheme_bg_primary',
 	) ) );
 
-	$wp_customize->add_setting( 'officialtheme_bg_secondary' );
+	// Bg Secondary
+	$wp_customize->add_setting( 'officialtheme_bg_secondary', array(
+	    'default' => '#474747',
+	    'transport'   => 'refresh',
+	    'sanitize_callback' => 'sanitize_hex_color',
+	) );
+
 
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize,  'officialtheme_bg_secondary', array(
-		'default'     => '#474747',
-		'transport'   => 'refresh',
 		'label'      => __( 'Secondary Color', 'official-flowershop' ),
 		'section'    => 'officialtheme_color_section',
 		'settings'   => 'officialtheme_bg_secondary',
 	) ) );
 
-	$wp_customize->add_setting( 'officialtheme_bg_light' );
+	// Bg Secondary
+	$wp_customize->add_setting( 'officialtheme_bg_light' , array(
+	    'default' => '#f5f5f5',
+	    'transport'   => 'refresh',
+	    'sanitize_callback' => 'sanitize_hex_color',
+	) );
 
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize,  'officialtheme_bg_light', array(
-		'default'     => '#f5f5f5',
-		'transport'   => 'refresh',
 		'label'      => __( 'Light Color', 'official-flowershop' ),
 		'section'    => 'officialtheme_color_section',
 		'settings'   => 'officialtheme_bg_light',
 	) ) );
 
-	$wp_customize->add_setting( 'officialtheme_bg_body' );
+	// Bg Body
+	$wp_customize->add_setting( 'officialtheme_bg_body', array(
+	    'default' => '#ffffff',
+	    'transport'   => 'refresh',
+	    'sanitize_callback' => 'sanitize_hex_color',
+	) );
 
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize,  'officialtheme_bg_body', array(
-		'default'     => '#ffffff',
-		'transport'   => 'refresh',
+		
 		'label'      => __( 'Body Color', 'official-flowershop' ),
 		'section'    => 'officialtheme_color_section',
 		'settings'   => 'officialtheme_bg_body',
@@ -66,7 +80,10 @@ function officialtheme_customize ( $wp_customize ) {
 		'description' => __( 'Upload a logo to replace the default site name and description in the header (if you dont upload one the default settings will be applied)', 'official-flowershop' ),
 	) );
 	
-	$wp_customize->add_setting( 'officialtheme_logo' );
+	$wp_customize->add_setting( 'officialtheme_logo', array(
+	    'default' => '',
+	    'sanitize_callback' => 'esc_url_raw',
+	) );
 	
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'officialtheme_logo', array(
 		'label'    => __( 'Logo', 'official-flowershop' ),
@@ -89,6 +106,7 @@ function officialtheme_customize ( $wp_customize ) {
 		'fixed_header_setting',
 		array(
 			'default' => 'fixed',
+			'sanitize_callback' => 'sanitize_key',
 		)
 	);
 	
@@ -120,6 +138,7 @@ function officialtheme_customize ( $wp_customize ) {
 		'envisintheme_hidefrontpage_setting',
 		array(
 			'default' => 'no',
+			'sanitize_callback' => 'sanitize_key',
 		)
 	);
 	
@@ -151,6 +170,7 @@ function officialtheme_customize ( $wp_customize ) {
 		'officialtheme-gotop',
 		array(
 			'default' => 'true',
+			'sanitize_callback' => 'sanitize_key',
 		)
 	);
 	
@@ -169,7 +189,7 @@ function officialtheme_customize ( $wp_customize ) {
 	
 	
 	/*************************
-	 * Social Media & Links
+	 * Social Media Icons
 	**************************/
 	$wp_customize->add_section( 'officialtheme_social_section', array(
 		'title'       => __( 'Social Media Links', 'official-flowershop' ),
@@ -177,9 +197,9 @@ function officialtheme_customize ( $wp_customize ) {
 		'priority'    => 30,
 	) );
 	
-	// Radio to display social links or not
 	$wp_customize->add_setting('officialtheme_social_control', array(
         'default'        => 'true',
+        'sanitize_callback' => 'sanitize_key',
     ));
     $wp_customize->add_control('radio_control', array(
         'label'      => __('Display Social Icons?', 'official-flowershop'),
@@ -187,91 +207,153 @@ function officialtheme_customize ( $wp_customize ) {
         'settings'   => 'officialtheme_social_control',
         'type'       => 'radio',
         'choices'    => array(
-            'true' => __('Show Social Icons', 'official-flowershop'),
-            'false' => __('Hide Social Icons', 'official-flowershop'),
+            'true' => __('Yes', 'official-flowershop'),
+            'false' => __('No', 'official-flowershop'),
         ),
     ));
 	
-	// Array for default ICON settings
-	$social_icons_default_settings = array(
-			'default' => 'icon.png',
-	);
-	// Array for default LINK settings
-	$social_links_default_settings = array(
-			'default' => '#',
-	);
-	
-	// Facebook Settings
-	$wp_customize->add_setting('officialtheme_social_icon[facebook]', $social_icons_default_settings);
-	$wp_customize->add_setting('officialtheme_social_link[facebook]', $social_links_default_settings);
-	// Twitter Settings
-	$wp_customize->add_setting('officialtheme_social_icon[twitter]', $social_icons_default_settings);
-	$wp_customize->add_setting('officialtheme_social_link[twitter]', $social_links_default_settings);
-	// Instagram Settings
-	$wp_customize->add_setting('officialtheme_social_icon[instagram]', $social_icons_default_settings);
-	$wp_customize->add_setting('officialtheme_social_link[instagram]', $social_links_default_settings);
-	// GooglePlus Settings
-	$wp_customize->add_setting('officialtheme_social_icon[googleplus]', $social_icons_default_settings);
-	$wp_customize->add_setting('officialtheme_social_link[googleplus]', $social_links_default_settings);
-	// Youtube Settings
-	$wp_customize->add_setting('officialtheme_social_icon[youtube]', $social_icons_default_settings);
-	$wp_customize->add_setting('officialtheme_social_link[youtube]', $social_links_default_settings);
 
-	// Facebook Controls
-	$wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'facebook_icon', array(
-		'label'      => __('First Social Icon', 'official-flowershop'),
+	// Social Icon 1 
+	$wp_customize->add_setting('officialtheme_social_icon_1_image', array(
+        'default'        => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+	$wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'officialtheme_social_icon_1_image', array(
+		'label'      => __('Social Icon Image (1)', 'official-flowershop'),
 		'section'    => 'officialtheme_social_section',
-		'settings'   => 'officialtheme_social_icon[facebook]',
+		'settings'   => 'officialtheme_social_icon_1_image',
 	)));
-	$wp_customize->add_control('facebook_link', array(
-		'label'      => __('First Social Link', 'official-flowershop'),
+
+	$wp_customize->add_setting('officialtheme_social_icon_1_link', array(
+        'default'        => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+	$wp_customize->add_control('officialtheme_social_icon_1_link', array(
+		'label'      => __('Social Icon Link (1)', 'official-flowershop'),
 		'section'    => 'officialtheme_social_section',
-		'settings'   => 'officialtheme_social_link[facebook]',
+		'settings'   => 'officialtheme_social_icon_1_link',
 	));
-	// Twitter Controls
-	$wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'twitter_icon', array(
-		'label'      => __('Second Social Icon', 'official-flowershop'),
+
+	// Social Icon 2
+	$wp_customize->add_setting('officialtheme_social_icon_2_image', array(
+        'default'        => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+	$wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'officialtheme_social_icon_2_image', array(
+		'label'      => __('Social Icon Image (2)', 'official-flowershop'),
 		'section'    => 'officialtheme_social_section',
-		'settings'   => 'officialtheme_social_icon[twitter]',
+		'settings'   => 'officialtheme_social_icon_2_image',
 	)));
-	$wp_customize->add_control('twitter_link', array(
-		'label'      => __('Second Social Link', 'official-flowershop'),
+
+	$wp_customize->add_setting('officialtheme_social_icon_2_link', array(
+        'default'        => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+	$wp_customize->add_control('officialtheme_social_icon_2_link', array(
+		'label'      => __('Social Icon Link (2)', 'official-flowershop'),
 		'section'    => 'officialtheme_social_section',
-		'settings'   => 'officialtheme_social_link[twitter]',
+		'settings'   => 'officialtheme_social_icon_2_link',
 	));
-	// Instagram Controls
-	$wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'instagram_icon', array(
-		'label'      => __('Third Social Icon', 'official-flowershop'),
+
+	// Social Icon 3
+	$wp_customize->add_setting('officialtheme_social_icon_3_image', array(
+        'default'        => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+	$wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'officialtheme_social_icon_3_image', array(
+		'label'      => __('Social Icon Image (3)', 'official-flowershop'),
 		'section'    => 'officialtheme_social_section',
-		'settings'   => 'officialtheme_social_icon[instagram]',
+		'settings'   => 'officialtheme_social_icon_3_image',
 	)));
-	$wp_customize->add_control('instagram_link', array(
-		'label'      => __('Third Social Link', 'official-flowershop'),
+
+	$wp_customize->add_setting('officialtheme_social_icon_3_link', array(
+        'default'        => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+	$wp_customize->add_control('officialtheme_social_icon_3_link', array(
+		'label'      => __('Social Icon Link (3)', 'official-flowershop'),
 		'section'    => 'officialtheme_social_section',
-		'settings'   => 'officialtheme_social_link[instagram]',
+		'settings'   => 'officialtheme_social_icon_3_link',
 	));
-	// GooglePlus Controls
-	$wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'googleplus_icon', array(
-		'label'      => __('Fourth Social Icon', 'official-flowershop'),
+
+	
+	// Social Icon 4
+	$wp_customize->add_setting('officialtheme_social_icon_4_image', array(
+        'default'        => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+	$wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'officialtheme_social_icon_4_image', array(
+		'label'      => __('Social Icon Image (4)', 'official-flowershop'),
 		'section'    => 'officialtheme_social_section',
-		'settings'   => 'officialtheme_social_icon[googleplus]',
+		'settings'   => 'officialtheme_social_icon_4_image',
 	)));
-	$wp_customize->add_control('googleplus_link', array(
-		'label'      => __('Fourth Social Link', 'official-flowershop'),
+
+	$wp_customize->add_setting('officialtheme_social_icon_4_link', array(
+        'default'        => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+	$wp_customize->add_control('officialtheme_social_icon_4_link', array(
+		'label'      => __('Social Icon Link (4)', 'official-flowershop'),
 		'section'    => 'officialtheme_social_section',
-		'settings'   => 'officialtheme_social_link[googleplus]',
+		'settings'   => 'officialtheme_social_icon_4_link',
 	));
-	// YouTube Controls
-	$wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'youtube_icon', array(
-		'label'      => __('Fifth Social Icon', 'official-flowershop'),
+
+
+	// Social Icon 5
+	$wp_customize->add_setting('officialtheme_social_icon_5_image', array(
+        'default'        => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+	$wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'officialtheme_social_icon_5_image', array(
+		'label'      => __('Social Icon Image (5)', 'official-flowershop'),
 		'section'    => 'officialtheme_social_section',
-		'settings'   => 'officialtheme_social_icon[youtube]',
+		'settings'   => 'officialtheme_social_icon_5_image',
 	)));
-	$wp_customize->add_control('youtube_link', array(
-		'label'      => __('Fifth Social Link', 'official-flowershop'),
+
+	$wp_customize->add_setting('officialtheme_social_icon_5_link', array(
+        'default'        => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+	$wp_customize->add_control('officialtheme_social_icon_5_link', array(
+		'label'      => __('Social Icon Link (5)', 'official-flowershop'),
 		'section'    => 'officialtheme_social_section',
-		'settings'   => 'officialtheme_social_link[youtube]',
+		'settings'   => 'officialtheme_social_icon_5_link',
 	));
+
+
+	// Social Icon 6
+	$wp_customize->add_setting('officialtheme_social_icon_6_image', array(
+        'default'        => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+	$wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'officialtheme_social_icon_6_image', array(
+		'label'      => __('Social Icon Image (6)', 'official-flowershop'),
+		'section'    => 'officialtheme_social_section',
+		'settings'   => 'officialtheme_social_icon_6_image',
+	)));
+
+	$wp_customize->add_setting('officialtheme_social_icon_6_link', array(
+        'default'        => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+	$wp_customize->add_control('officialtheme_social_icon_6_link', array(
+		'label'      => __('Social Icon Link (6)', 'official-flowershop'),
+		'section'    => 'officialtheme_social_section',
+		'settings'   => 'officialtheme_social_icon_6_link',
+	));
+
 
 
 
@@ -286,7 +368,10 @@ function officialtheme_customize ( $wp_customize ) {
 		'description' => __( 'Upload your background image to display on the slider section with parallax effect (Remove the background image to display background as color)', 'official-flowershop' ),
 	) );
 	
-	$wp_customize->add_setting( 'officialtheme_slider' );
+	$wp_customize->add_setting( 'officialtheme_slider', array(
+	    'default' => '',
+	    'sanitize_callback' => 'esc_url_raw',
+	) );
 
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'officialtheme_slider', array(
 		'label'    => __( 'Slider Background Image', 'official-flowershop' ),
@@ -299,6 +384,7 @@ function officialtheme_customize ( $wp_customize ) {
 		'officialtheme_slider_parallax',
 		array(
 			'default' => 'yes',
+			'sanitize_callback' => 'sanitize_key',
 		)
 	);
 	
@@ -319,6 +405,7 @@ function officialtheme_customize ( $wp_customize ) {
 		'officialtheme_slider_autoplay',
 		array(
 			'default' =>  'true',
+			'sanitize_callback' => 'sanitize_key',
 		)
 	);
 	
@@ -339,6 +426,7 @@ function officialtheme_customize ( $wp_customize ) {
 		'officialtheme_slider_navigation',
 		array(
 			'default' => 'true',
+			'sanitize_callback' => 'sanitize_key',
 		)
 	);
 	
@@ -359,6 +447,7 @@ function officialtheme_customize ( $wp_customize ) {
 		'officialtheme_slider_pagination',
 		array(
 			'default' =>  'true',
+			'sanitize_callback' => 'sanitize_key',
 		)
 	);
 	
@@ -382,7 +471,10 @@ function officialtheme_customize ( $wp_customize ) {
 		'description' => __( 'Chosse an iamge to display on the footer as your accepted credit cards image', 'official-flowershop' ),
 	) );
 	
-	$wp_customize->add_setting( 'officialtheme_cards' );
+	$wp_customize->add_setting( 'officialtheme_cards', array(
+	    'default' => '',
+	    'sanitize_callback' => 'esc_url_raw',
+	) );
 
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'officialtheme_cards', array(
 		'label'    => __( 'Accepted Cards Image', 'official-flowershop' ),
@@ -402,6 +494,7 @@ function officialtheme_customize ( $wp_customize ) {
 		'officialtheme_animations',
 		array(
 			'default' =>  'true',
+			'sanitize_callback' => 'sanitize_key',
 		)
 	);
 	
@@ -417,10 +510,12 @@ function officialtheme_customize ( $wp_customize ) {
 			),
 		)
 	);
-	
+
+
 	// Remove some options from customizer 
 	$wp_customize->remove_section('background_image');
 	$wp_customize->remove_section('colors');
+	
 
 }
 

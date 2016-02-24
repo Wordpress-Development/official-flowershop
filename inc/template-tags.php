@@ -15,7 +15,7 @@ if (!function_exists('official_flowershop_CategoriesList')) {
 	 */
 	function official_flowershop_CategoriesList($categories_list = '') 
 	{
-		return sprintf('<span class="categories-icon glyphicon glyphicon-th-list" title="' . __('Posted in', 'bootstrap-basic') . '"></span> %1$s', $categories_list);
+		return sprintf('<span class="categories-icon glyphicon glyphicon-th-list" title="' . __('Posted in', 'official-flowershop') . '"></span> %1$s', $categories_list);
 	}// official_flowershop_CategoriesList
 }
 

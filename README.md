@@ -11,12 +11,11 @@ E-commerce Free WordPres Theme featuring WooCommerce plugin. Fully Responsive an
 
 * Author: OfficialTheme
 * Author URI: http://www.officialthtme.com
-* Tags: white, gray, light, one-column, e-commerce, woocommerce, responsive, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-menu, translation-ready
-* Requires at least: 4.0
-* Tested up to: 4.4.2
+* Requires at least: WordPress 4.0
+* Tested up to: WordPress 4.4.2
 * Stable tag: 1.0.0
-* License: GPLv2 or later
-* License URI: http://www.gnu.org/licenses/gpl-2.0.html
+* License: GPLv2 or later - http://www.gnu.org/licenses/gpl-2.0.html
+
 
 ## Installation
 In case you already have a running WordPress site then follow this simple steps to install only our Theme, but if you are starting your website from scratch, we strongly recommend that you use "Installing with Sample Data" guide below (make your website exactly as our Demo)
@@ -65,6 +64,7 @@ Open the "Multi Plugin Installer" from the menu on the left and enter the follow
 BAW Login/Logout menu
 Contact Form 7
 Custom Classes
+Customizer Export/Import
 Display Widgets
 Huge IT Portfolio Gallery
 MailChimp for WordPress
@@ -98,14 +98,17 @@ Now, we will import the Sample Data into your WordPress site.
 
 Again, it is important to notice that if you already have a running WordPress site, (you have posts and pages you wish to keep) do not install the sample data files as they may replace your current data.
 
-1. In your admin panel go to "Tools > Import > WordPress"
+a. **Import Wordpress Sample Data** 
+In your admin panel go to "Tools > Import > WordPress"
 Import this file "official-flowershop.wordpress.(date-is-here).xml"
-**Notice:** Make sure you select "Download and import file attachments" when importing, to import all media.
+**Notice:** Make sure you select "Download and import file attachments" when importing, to import all media. Also, the import may take a couple of minutes.
 
-2. In your admin panel go to "Apperance > Widgets" and delete all default widgets that are currently positioned on any of widgets area. 
+b. **Import Widgets**
+In your admin panel go to "Apperance > Widgets" and delete all default widgets that are currently positioned on any of widgets area. 
 Go to "Tools > Widget Importer & Exporter" and From the Import option upload this file "official-flowershop.widgets.(date-is-here).wie". 
 
-3. In your admin panel go to "Smart Slider" and find the "Import slider from different sources" and upload this file "Smart-Slider.(date-is-here).ss3"
+c. **Import Smart Slider 3 Sample Data**
+In your admin panel go to "Smart Slider" and find the "Import slider from different sources" and upload this file "Smart-Slider.(date-is-here).ss3"
 
 
 #### Step 5
