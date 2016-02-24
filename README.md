@@ -7,7 +7,7 @@ E-commerce Free WordPres Theme featuring WooCommerce plugin. Fully Responsive an
 [Learn more](http://www.officialtheme.com/themes/official-flowershop/) or 
 [View Demo](http://official-flowershop.cloudaccess.host/)
 
--
+#### Info
 
 * Author: OfficialTheme
 * Author URI: http://www.officialthtme.com
