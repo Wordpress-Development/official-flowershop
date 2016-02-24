@@ -1,6 +1,6 @@
 # Official FlowerShop
 
-![Theme Preview](http://s16.postimg.org/b3onlbhfp/official_flowershop_2.jpg)
+![Theme Preview](http://s17.postimg.org/itc0c0ibz/official_flowershop_github.jpg)
 
 E-commerce Free WordPres Theme featuring WooCommerce plugin. Fully Responsive and beautiful design. Download it for Free today
 
