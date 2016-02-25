@@ -239,7 +239,7 @@ function official_flowershop_add_editor_styles() {
     add_editor_style( 'css/custom-editor-style.css' );
 }
 
-add_action( 'admin_init', 'officialtheme_add_editor_styles' );
+add_action( 'admin_init', 'official_flowershop_add_editor_styles' );
 
 
 

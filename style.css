@@ -3,30 +3,18 @@ Theme Name: Official FlowerShop
 Theme URI: http://www.officialtheme.com/themes/official-flowershop/
 Author: OfficialTheme
 Author URI: http://www.officialtheme.com
-Description: E-commerce Free Wordpress Theme featuring WooCommerce plugin. Fully Responsive and beautiful design.
+Description: E-commerce Free Wordpress Theme featuring WooCommerce plugin. Fully Responsive, beautiful design. Also, some of the features are: built-in with Bootstrap 3, LESS-CSS, parallax backgrounds, CSS3 animations, collapsible widgets area, fixed Header and much more.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: official-flowershop
 Domain Path: /languages/
 Tags: white, light, white, one-column, two-columns, three-columns, left-sidebar, right-sidebar, responsive-layout, custom-colors, custom-menu, theme-options, translation-ready
-*/
 
-
-/* 
-We are using LESS processor to handle CSS styles for this Theme.
-The files are located in 'css/less' folder inside the theme. 
-We strongly reccomend that you dont directly edit those files as your changes might lost when you update theme.
-
-- If you want to edit theme styles using LESS simply create a new file called 'custom.less' inside the 'css/less' folder
-- If you are not familiar with LESS, you may craete a new file called 'custom.css' inside the 'css' folder.
 
 */
 
 
-/* 
-For any support questions please use our forums at 'http://www.officialtheme.com/support' 
-*/
 
 
 

@@ -1,0 +1,670 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Official FlowerShop\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Thu Feb 25 2016 15:34:05 GMT+0100 (CET)\n"
+"PO-Revision-Date: Thu Feb 25 2016 15:34:46 GMT+0100 (CET)\n"
+"Last-Translator: admin <noreply@officialtheme.com>\n"
+"Language-Team: \n"
+"Language: English\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Loco-Target-Locale: en_US\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: ../404.php:20
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: ../404.php:25
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: ../404.php:33 ../404.php:34 ../searchform.php:11 ../inc/template-tags.php:170
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: ../404.php:34 ../inc/template-tags.php:170
+msgctxt "label"
+msgid "Search &hellip;"
+msgstr ""
+
+#: ../404.php:37 ../searchform.php:13 ../inc/template-tags.php:173
+msgid "Search"
+msgstr ""
+
+#: ../404.php:45
+msgid "Return Home"
+msgstr ""
+
+#: ../archive.php:41
+#, php-format
+msgid "Author: %s"
+msgstr ""
+
+#: ../archive.php:49
+#, php-format
+msgid "Day: %s"
+msgstr ""
+
+#: ../archive.php:52
+#, php-format
+msgid "Month: %s"
+msgstr ""
+
+#: ../archive.php:55
+#, php-format
+msgid "Year: %s"
+msgstr ""
+
+#: ../archive.php:58
+msgid "Asides"
+msgstr ""
+
+#: ../archive.php:61
+msgid "Images"
+msgstr ""
+
+#: ../archive.php:64
+msgid "Videos"
+msgstr ""
+
+#: ../archive.php:67
+msgid "Quotes"
+msgstr ""
+
+#: ../archive.php:70
+msgid "Links"
+msgstr ""
+
+#: ../archive.php:73
+msgid "Archives"
+msgstr ""
+
+#: ../comments.php:28
+#, php-format
+msgctxt "comments title"
+msgid "One comment on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s comments on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../comments.php:33 ../comments.php:53
+msgid "Comment navigation"
+msgstr ""
+
+#: ../comments.php:35 ../comments.php:55
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: ../comments.php:36 ../comments.php:56
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: ../comments.php:65
+msgid "Comments are closed."
+msgstr ""
+
+#: ../comments.php:104
+msgid "Name"
+msgstr ""
+
+#: ../comments.php:110
+msgid "Email"
+msgstr ""
+
+#: ../comments.php:116
+msgid "Website"
+msgstr ""
+
+#: ../comments.php:123
+msgctxt "noun"
+msgid "Comment"
+msgstr ""
+
+#: ../comments.php:129
+#, php-format
+msgid ""
+"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
+"and attributes: %s"
+msgstr ""
+
+#: ../content-aside.php:19 ../content-link.php:32 ../content-page.php:26 ..
+#: /content-quote.php:18 ../content-single.php:26 ../content.php:46
+msgid "Pages:"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#. translators: used between list items, there is a space after the comma
+#. translators: used between list items, there is a space after the comma
+#. translators: used between list items, there is a space after the comma
+#. translators: used between list items, there is a space after the comma
+#. translators: used between list items, there is a space after the comma
+#. translators: used between list items, there is a space after the comma
+#. translators: used between list items, there is a space after the comma
+#. translators: used between list items, there is a space after the comma
+#. translators: used between list items, there is a space after the comma
+#: ../content-aside.php:34 ../content-aside.php:44 ../content-link.php:45 ..
+#: /content-link.php:55 ../content-quote.php:30 ../content-quote.php:40 ..
+#: /content-single.php:36 ../content-single.php:39 ../content.php:60 ../content.
+#: php:70
+msgid ", "
+msgstr ""
+
+#: ../content-single.php:47
+#, php-format
+msgid ""
+"<span class=\"glyphicon glyphicon-link\"></span> <a href=\"%1$s\" "
+"title=\"Permalink to %2$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: ../footer.php:90
+#, php-format
+msgid "Designer: %1$s"
+msgstr ""
+
+#: ../footer.php:97
+msgid "Accepted Cards"
+msgstr ""
+
+#: ../footer.php:109 ../inc/customize.php:163
+msgid "Go to Top"
+msgstr ""
+
+#: ../functions.php:52
+msgid "Primary"
+msgstr ""
+
+#: ../functions.php:53
+msgid "Top Menu"
+msgstr ""
+
+#: ../header.php:33
+msgid "Skip to content"
+msgstr ""
+
+#: ../header.php:83
+msgid "Toggle Navigation"
+msgstr ""
+
+#: ../image.php:24
+#, php-format
+msgid ""
+"Published <span class=\"entry-date\"><time class=\"entry-date\" "
+"datetime=\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-"
+"size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" "
+"rel=\"gallery\">%8$s</a>"
+msgstr ""
+
+#: ../image.php:42
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr ""
+
+#: ../image.php:43
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../no-results.php:10
+msgid "Nothing Found"
+msgstr ""
+
+#: ../no-results.php:15
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: ../no-results.php:17
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../no-results.php:20
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../search.php:22
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../searchform.php:9
+msgctxt "label"
+msgid "Search for"
+msgstr ""
+
+#: ../searchform.php:11 ../woocommerce/product-searchform.php:29
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: ../inc/customize.php:14
+msgid "Template Style"
+msgstr ""
+
+#: ../inc/customize.php:16
+msgid ""
+"Chose your prefered colors for your website. We reccomend that you change "
+"only the Primary Color but feel free if you want to change other color "
+"settings as well. <br> <strong>NOTE To see changes please save the settings "
+"and check your frontend.</strong>"
+msgstr ""
+
+#: ../inc/customize.php:28
+msgid "Primary Color"
+msgstr ""
+
+#: ../inc/customize.php:42
+msgid "Secondary Color"
+msgstr ""
+
+#: ../inc/customize.php:55
+msgid "Light Color"
+msgstr ""
+
+#: ../inc/customize.php:69
+msgid "Body Color"
+msgstr ""
+
+#: ../inc/customize.php:78 ../inc/customize.php:89
+msgid "Logo"
+msgstr ""
+
+#: ../inc/customize.php:80
+msgid ""
+"Upload a logo to replace the default site name and description in the header "
+"(if you dont upload one the default settings will be applied)"
+msgstr ""
+
+#: ../inc/customize.php:99
+msgid "Fixed Header"
+msgstr ""
+
+#: ../inc/customize.php:100
+msgid "Choose weither you want the header (navigation) to be fixed or not"
+msgstr ""
+
+#: ../inc/customize.php:117
+msgid "Header Layout"
+msgstr ""
+
+#: ../inc/customize.php:120
+msgid "Fixed"
+msgstr ""
+
+#: ../inc/customize.php:121
+msgid "Static"
+msgstr ""
+
+#: ../inc/customize.php:131
+msgid "Hide Frontpage content"
+msgstr ""
+
+#: ../inc/customize.php:132
+msgid "Choose weither you want to hide the content of the frontpage or not"
+msgstr ""
+
+#: ../inc/customize.php:149
+msgid "Frontpage Content"
+msgstr ""
+
+#: ../inc/customize.php:152 ../inc/customize.php:184 ../inc/customize.php:210 ..
+#: /inc/customize.php:398 ../inc/customize.php:419 ../inc/customize.php:440 ..
+#: /inc/customize.php:461 ../inc/customize.php:508 ../inc/extends/woo_products.
+#: php:111 ../inc/extends/woo_products.php:121 ../inc/extends/woo_products.php:131
+msgid "Yes"
+msgstr ""
+
+#: ../inc/customize.php:153 ../inc/customize.php:185 ../inc/customize.php:211 ..
+#: /inc/customize.php:399 ../inc/customize.php:420 ../inc/customize.php:441 ..
+#: /inc/customize.php:462 ../inc/customize.php:509 ../inc/extends/woo_products.
+#: php:112 ../inc/extends/woo_products.php:122 ../inc/extends/woo_products.php:132
+msgid "No"
+msgstr ""
+
+#: ../inc/customize.php:164
+msgid ""
+"Provide a link to offer your users the ability to easily go back to the top "
+"of the page"
+msgstr ""
+
+#: ../inc/customize.php:181
+msgid "Enabled Go to Top Link?"
+msgstr ""
+
+#: ../inc/customize.php:195
+msgid "Social Media Links"
+msgstr ""
+
+#: ../inc/customize.php:196
+msgid ""
+"Upload your social Icon, and set the URL to redirect your users to your "
+"Social Websites"
+msgstr ""
+
+#: ../inc/customize.php:205
+msgid "Display Social Icons?"
+msgstr ""
+
+#: ../inc/customize.php:223
+msgid "Social Icon Image (1)"
+msgstr ""
+
+#: ../inc/customize.php:234
+msgid "Social Icon Link (1)"
+msgstr ""
+
+#: ../inc/customize.php:246
+msgid "Social Icon Image (2)"
+msgstr ""
+
+#: ../inc/customize.php:257
+msgid "Social Icon Link (2)"
+msgstr ""
+
+#: ../inc/customize.php:269
+msgid "Social Icon Image (3)"
+msgstr ""
+
+#: ../inc/customize.php:280
+msgid "Social Icon Link (3)"
+msgstr ""
+
+#: ../inc/customize.php:293
+msgid "Social Icon Image (4)"
+msgstr ""
+
+#: ../inc/customize.php:304
+msgid "Social Icon Link (4)"
+msgstr ""
+
+#: ../inc/customize.php:317
+msgid "Social Icon Image (5)"
+msgstr ""
+
+#: ../inc/customize.php:328
+msgid "Social Icon Link (5)"
+msgstr ""
+
+#: ../inc/customize.php:341
+msgid "Social Icon Image (6)"
+msgstr ""
+
+#: ../inc/customize.php:352
+msgid "Social Icon Link (6)"
+msgstr ""
+
+#: ../inc/customize.php:366
+msgid "Slider Background"
+msgstr ""
+
+#: ../inc/customize.php:368
+msgid ""
+"Upload your background image to display on the slider section with parallax "
+"effect (Remove the background image to display background as color)"
+msgstr ""
+
+#: ../inc/customize.php:377
+msgid "Slider Background Image"
+msgstr ""
+
+#: ../inc/customize.php:395
+msgid "Enable Parallax Effect?"
+msgstr ""
+
+#: ../inc/customize.php:416 ../inc/extends/woo_products.php:109
+msgid "Enable Autoplay?"
+msgstr ""
+
+#: ../inc/customize.php:437
+msgid "Enable Naivgation (prev/next) ?"
+msgstr ""
+
+#: ../inc/customize.php:458 ../inc/extends/woo_products.php:129
+msgid "Enable Pagination (bullets)?"
+msgstr ""
+
+#: ../inc/customize.php:469 ../inc/customize.php:480
+msgid "Accepted Cards Image"
+msgstr ""
+
+#: ../inc/customize.php:471
+msgid "Chosse an iamge to display on the footer as your accepted credit cards image"
+msgstr ""
+
+#: ../inc/customize.php:488
+msgid "CSS3 Animations"
+msgstr ""
+
+#: ../inc/customize.php:490
+msgid ""
+"CSS3 animations are used to further increase the beauty in your website by "
+"providing some cool  transition effects when page scrolls"
+msgstr ""
+
+#: ../inc/customize.php:505
+msgid "Enable CSS3 Animations ?"
+msgstr ""
+
+#: ../inc/extras.php:103
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: ../inc/social_icons.php:17
+msgid "Social Icon 1"
+msgstr ""
+
+#: ../inc/social_icons.php:25
+msgid "Social Icon 2"
+msgstr ""
+
+#: ../inc/social_icons.php:33
+msgid "Social Icon 3"
+msgstr ""
+
+#: ../inc/social_icons.php:41
+msgid "Social Icon 4"
+msgstr ""
+
+#: ../inc/social_icons.php:49
+msgid "Social Icon 5"
+msgstr ""
+
+#: ../inc/social_icons.php:57
+msgid "Social Icon 6"
+msgstr ""
+
+#: ../inc/template-tags.php:18
+msgid "Posted in"
+msgstr ""
+
+#: ../inc/template-tags.php:43
+msgid "Pingback:"
+msgstr ""
+
+#: ../inc/template-tags.php:45 ../inc/template-tags.php:86 ../inc/template-tags.
+#: php:147 ../inc/template-tags.php:147
+msgid "Edit"
+msgstr ""
+
+#: ../inc/template-tags.php:79
+#, php-format
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: ../inc/template-tags.php:93
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../inc/template-tags.php:98
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr ""
+
+#: ../inc/template-tags.php:110
+msgid "Reply"
+msgstr ""
+
+#: ../inc/template-tags.php:111
+msgid "Log in to Reply"
+msgstr ""
+
+#: ../inc/template-tags.php:210
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../inc/template-tags.php:283
+#, php-format
+msgid ""
+"<span class=\"posted-on\">Posted on %1$s</span><span class=\"byline\"> by "
+"%2$s</span>"
+msgstr ""
+
+#: ../inc/template-tags.php:291
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: ../inc/template-tags.php:308
+msgid "Tagged"
+msgstr ""
+
+#: ../inc/extends/woo_products.php:30
+msgid "Display a list of your products on your site."
+msgstr ""
+
+#: ../inc/extends/woo_products.php:32
+msgid "Official WooCommerce Products (slider)"
+msgstr ""
+
+#: ../inc/extends/woo_products.php:38
+msgid "Products"
+msgstr ""
+
+#: ../inc/extends/woo_products.php:39
+msgid "Title"
+msgstr ""
+
+#: ../inc/extends/woo_products.php:48
+msgid "Total number of products to show"
+msgstr ""
+
+#: ../inc/extends/woo_products.php:54
+msgid "Show"
+msgstr ""
+
+#: ../inc/extends/woo_products.php:56
+msgid "All Products"
+msgstr ""
+
+#: ../inc/extends/woo_products.php:57
+msgid "Featured Products"
+msgstr ""
+
+#: ../inc/extends/woo_products.php:58
+msgid "On-sale Products"
+msgstr ""
+
+#: ../inc/extends/woo_products.php:65
+msgid "Order by"
+msgstr ""
+
+#: ../inc/extends/woo_products.php:67
+msgid "Date"
+msgstr ""
+
+#: ../inc/extends/woo_products.php:68
+msgid "Price"
+msgstr ""
+
+#: ../inc/extends/woo_products.php:69
+msgid "Random"
+msgstr ""
+
+#: ../inc/extends/woo_products.php:70
+msgid "Sales"
+msgstr ""
+
+#: ../inc/extends/woo_products.php:77
+msgctxt "Sorting order"
+msgid "Order"
+msgstr ""
+
+#: ../inc/extends/woo_products.php:79
+msgid "ASC"
+msgstr ""
+
+#: ../inc/extends/woo_products.php:80
+msgid "DESC"
+msgstr ""
+
+#: ../inc/extends/woo_products.php:87
+msgid "Hide free products"
+msgstr ""
+
+#: ../inc/extends/woo_products.php:93
+msgid "Show hidden products"
+msgstr ""
+
+#: ../inc/extends/woo_products.php:103
+msgid "Number of products in a slide"
+msgstr ""
+
+#: ../inc/extends/woo_products.php:119
+msgid "Enable Naivgation (prev/next)?"
+msgstr ""
+
+#: ../woocommerce/product-searchform.php:27
+msgid "Search for:"
+msgstr ""
+
+#: ../woocommerce/product-searchform.php:29
+msgctxt "placeholder"
+msgid "Search Products&hellip;"
+msgstr ""
+
+#: ../woocommerce/product-searchform.php:31
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#. Name of the theme
+msgid "Official FlowerShop"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "http://www.officialtheme.com/themes/official-flowershop/"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"E-commerce Free Wordpress Theme featuring WooCommerce plugin. Fully "
+"Responsive, beautiful design. Also, some of the features are: built-in with "
+"Bootstrap 3, LESS-CSS, parallax backgrounds, CSS3 animations, collapsible "
+"widgets area, fixed Header and much more."
+msgstr ""
+
+#. Author of the theme
+msgid "OfficialTheme"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://www.officialtheme.com"
+msgstr ""
