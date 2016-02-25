@@ -1,2 +1,5 @@
-## Changelog
-* 1.0.0 - February 22 2016 (Initial Release)
+# CHANGELOG - Official FlowerShop
+
+
+#### VERSION 1.0
+Released February 22, 2016

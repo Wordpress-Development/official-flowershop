@@ -6,7 +6,7 @@
  */
 
 
-function officialtheme_customize ( $wp_customize ) {
+function official_flowershop_customize ( $wp_customize ) {
 	
 	
 	// Custom Style 
@@ -519,7 +519,7 @@ function officialtheme_customize ( $wp_customize ) {
 
 }
 
-add_action( 'customize_register', 'officialtheme_customize' );
+add_action( 'customize_register', 'official_flowershop_customize' );
 
 
 

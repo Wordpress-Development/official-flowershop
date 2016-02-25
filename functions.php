@@ -167,64 +167,64 @@ require get_template_directory() . '/inc/wp-less/bootstrap-for-theme.php';
 /**
 * Enqueue scripts & styles
 */
-function officialtheme_scripts_styles() {
+function official_flowershop_scripts_styles() {
 
 	// WP default scripts and styles
-	wp_enqueue_style('officialtheme-wp-style', get_template_directory_uri() . '/style.css');
-	wp_enqueue_script( 'officialtheme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_style('official_flowershop-wp-style', get_template_directory_uri() . '/style.css');
+	wp_enqueue_script( 'official_flowershop-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
 	// framework styles and scripts
-	wp_enqueue_style('officialtheme-bootstrap-style', get_template_directory_uri() . '/css/bootstrap.min.css');
-	wp_enqueue_style('officialtheme-bootstrap-theme-style', get_template_directory_uri() . '/css/bootstrap-theme.min.css');
-	wp_enqueue_style('officialtheme-fontawesome-style', get_template_directory_uri() . '/css/font-awesome.min.css');
+	wp_enqueue_style('official_flowershop-bootstrap-style', get_template_directory_uri() . '/css/bootstrap.min.css');
+	wp_enqueue_style('official_flowershop-bootstrap-theme-style', get_template_directory_uri() . '/css/bootstrap-theme.min.css');
+	wp_enqueue_style('official_flowershop-fontawesome-style', get_template_directory_uri() . '/css/font-awesome.min.css');
 
-	wp_enqueue_script('officialtheme-modernizr-script', get_template_directory_uri() . '/js/vendor/modernizr.min.js');
-	wp_enqueue_script('officialtheme-respond-script', get_template_directory_uri() . '/js/vendor/respond.min.js');
-	wp_enqueue_script('officialtheme-html5-shiv-script', get_template_directory_uri() . '/js/vendor/html5shiv.js');
-	wp_enqueue_script('officialtheme-bootstrap-script', get_template_directory_uri() . '/js/vendor/bootstrap.min.js', array(), false, true);
+	wp_enqueue_script('official_flowershop-modernizr-script', get_template_directory_uri() . '/js/vendor/modernizr.min.js');
+	wp_enqueue_script('official_flowershop-respond-script', get_template_directory_uri() . '/js/vendor/respond.min.js');
+	wp_enqueue_script('official_flowershop-html5-shiv-script', get_template_directory_uri() . '/js/vendor/html5shiv.js');
+	wp_enqueue_script('official_flowershop-bootstrap-script', get_template_directory_uri() . '/js/vendor/bootstrap.min.js', array(), false, true);
 
 
 
 	// Main base theme style (LESS)
-	wp_enqueue_style('officialtheme-theme-style', get_template_directory_uri().'/css/less/theme.less');
+	wp_enqueue_style('official_flowershop-theme-style', get_template_directory_uri().'/css/less/theme.less');
 
 	//Google fonts
-	wp_enqueue_style( 'officialtheme-google-fonts', 'http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Handlee', false ); 
+	wp_enqueue_style( 'official_flowershop-google-fonts', 'http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Handlee', false ); 
 
 	// Parallax backgrounds
 	if ( is_active_sidebar('en_widgets_area_slider') && get_theme_mod('officialtheme_slider') && get_theme_mod('officialtheme_slider_parallax', 'yes')=='yes' ) {
-		wp_enqueue_script('officialtheme-parallax', get_template_directory_uri() . '/js/parallax.js-1.4.2/parallax.min.js', array('jquery'), false, true );
+		wp_enqueue_script('official_flowershop-parallax', get_template_directory_uri() . '/js/parallax.js-1.4.2/parallax.min.js', array('jquery'), false, true );
 	}
 
 	// Owl Carousel
-	wp_enqueue_script('officialtheme-owlcarousel-script', get_template_directory_uri() . '/js/owl.carousel/owl-carousel/owl.carousel.min.js', array('jquery'), false, true );
-	wp_enqueue_style('officialtheme-owlcarousel-style', get_template_directory_uri() . '/js/owl.carousel/owl-carousel/owl.carousel.css', false );
-	wp_enqueue_style('officialtheme-owlcarousel-style-theme', get_template_directory_uri() . '/js/owl.carousel/owl-carousel/owl.theme.css', false);
+	wp_enqueue_script('official_flowershop-owlcarousel-script', get_template_directory_uri() . '/js/owl.carousel/owl-carousel/owl.carousel.min.js', array('jquery'), false, true );
+	wp_enqueue_style('official_flowershop-owlcarousel-style', get_template_directory_uri() . '/js/owl.carousel/owl-carousel/owl.carousel.css', false );
+	wp_enqueue_style('official_flowershop-owlcarousel-style-theme', get_template_directory_uri() . '/js/owl.carousel/owl-carousel/owl.theme.css', false);
 
 	// Fixed Header
 	if ( get_theme_mod( 'fixed_header_setting', 'fixed' ) == 'fixed' ) {
-		wp_enqueue_script('officialtheme-ScrollToFixed', get_template_directory_uri() . '/js/ScrollToFixed-master/jquery-scrolltofixed-min.js', array('jquery'), false, true );
+		wp_enqueue_script('official_flowershop-ScrollToFixed', get_template_directory_uri() . '/js/ScrollToFixed-master/jquery-scrolltofixed-min.js', array('jquery'), false, true );
 	}
 
 	// CSS3 Animated it
 	if ( get_theme_mod('officialtheme_animations','true')=='true' ) {
-		wp_enqueue_script('officialtheme-animatedit-script', get_template_directory_uri() . '/js/css3-animate-it-master/js/css3-animate-it.js', array('jquery'), false, true );
-		wp_enqueue_style('officialtheme-animatedit-style', get_template_directory_uri() . '/js//css3-animate-it-master/css/animations.css', false );
+		wp_enqueue_script('official_flowershop-animatedit-script', get_template_directory_uri() . '/js/css3-animate-it-master/js/css3-animate-it.js', array('jquery'), false, true );
+		wp_enqueue_style('official_flowershop-animatedit-style', get_template_directory_uri() . '/js//css3-animate-it-master/css/animations.css', false );
 	}
 
 	// Load custom CSS if it exists
 	$officialtheme_theme_custom_css = get_stylesheet_directory().'/css/custom.css';
 	if ( file_exists($officialtheme_theme_custom_css) ) {
-		wp_enqueue_style('officialtheme-theme-custom', get_stylesheet_directory_uri().'/css/custom.css');
+		wp_enqueue_style('official_flowershop-theme-custom', get_stylesheet_directory_uri().'/css/custom.css');
 	}
 
 }	
 
-add_action( 'wp_enqueue_scripts', 'officialtheme_scripts_styles' );
+add_action( 'wp_enqueue_scripts', 'official_flowershop_scripts_styles' );
 
 
 
@@ -235,7 +235,7 @@ add_action( 'wp_enqueue_scripts', 'officialtheme_scripts_styles' );
  *
  */
 
-function officialtheme_add_editor_styles() {
+function official_flowershop_add_editor_styles() {
     add_editor_style( 'css/custom-editor-style.css' );
 }
 
@@ -251,15 +251,12 @@ add_theme_support( 'woocommerce' );
 
 
 // Change number or products per row to 3
-add_filter('loop_shop_columns', 'loop_columns');
 if (!function_exists('loop_columns')) {
 	function loop_columns() {
 		return 3; // 3 products per row
 	}
 }
-
-// limit products per page
-add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 15;' ), 20 );
+add_filter('loop_shop_columns', 'loop_columns');
 
 
 // Change number of related products on product page 
@@ -273,11 +270,11 @@ if (!function_exists('woo_related_products_limit')) {
 	}
 }
 
+add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 15;' ), 20 );
+
 
 // change number of related products
-add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args' );
-
-  if (!function_exists('jk_related_products_args')) {
+if (!function_exists('jk_related_products_args')) {
 
 	function jk_related_products_args( $args ) {
 
@@ -285,7 +282,10 @@ add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_arg
 		$args['columns'] = 3; // arranged in 2 columns
 		return $args;
 	}
+
 }
+
+add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args' );
 
 
 

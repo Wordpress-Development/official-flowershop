@@ -7,7 +7,7 @@
 
 
 
-function officialtheme_scripts_footer() { ?>
+function official_flowershop_scripts_footer() { ?>
 
 	<script type="text/javascript">
         jQuery(document).ready(function() { 
@@ -101,5 +101,5 @@ function officialtheme_scripts_footer() { ?>
 	
 <?php }
 
-add_action('wp_footer','officialtheme_scripts_footer');
+add_action('wp_footer','official_flowershop_scripts_footer');
  
