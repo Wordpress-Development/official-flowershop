@@ -128,7 +128,7 @@ Basically there are two ways to customize our theme:
 
 1. **Child Themes (recommended)** (tutorial coming soon). For the moment please follow [This Link](http://www.wpbeginner.com/wp-themes/how-to-create-a-wordpress-child-theme-video/) to learn more how to create a new child theme.
 
-2. ** Edit LESS/CSS only (optional)** This option works only if you plan to edit or add only CSS or LESS styles and not needing to alter any other part. Simply create a new file called 'custom.less' inside the 'css/less' folder (main theme folder, not the child one) and add your Less styles there (or just CSS for that matter). If you are not familiar with LESS-CSS, you may create a new file called 'custom.css' inside the 'css' folder and add your CSS styles there
+2. **Edit LESS/CSS only (optional)** This option works only if you plan to edit or add only CSS or LESS styles and not needing to alter any other part. Simply create a new file called 'custom.less' inside the 'css/less' folder (main theme folder, not the child one) and add your Less styles there (or just CSS for that matter). If you are not familiar with LESS-CSS, you may create a new file called 'custom.css' inside the 'css' folder and add your CSS styles there
 
 
 ## Support
