@@ -117,10 +117,9 @@ function official_flowershop_setup() {
 
 }
 
-endif;
+endif; //official_flowershop_setup
 
 add_action( 'after_setup_theme', 'official_flowershop_setup' );
-
 
 
 
@@ -191,7 +190,7 @@ function officialtheme_scripts_styles() {
 
 
 	// Main base theme style (LESS)
-	wp_enqueue_style('officialtheme-theme-style', get_stylesheet_directory_uri().'/css/less/theme.less');
+	wp_enqueue_style('officialtheme-theme-style', get_template_directory_uri().'/css/less/theme.less');
 
 	//Google fonts
 	wp_enqueue_style( 'officialtheme-google-fonts', 'http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Handlee', false ); 
@@ -264,21 +263,28 @@ add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 15;' ), 20 )
 
 
 // Change number of related products on product page 
-function woo_related_products_limit() {
-  global $product;
-	
-	$args['posts_per_page'] = 6;
-	return $args;
+if (!function_exists('woo_related_products_limit')) {
+
+	function woo_related_products_limit() {
+	  global $product;
+		
+		$args['posts_per_page'] = 6;
+		return $args;
+	}
 }
+
 
 // change number of related products
 add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args' );
 
-  function jk_related_products_args( $args ) {
+  if (!function_exists('jk_related_products_args')) {
 
-	$args['posts_per_page'] = 3; // 4 related products
-	$args['columns'] = 3; // arranged in 2 columns
-	return $args;
+	function jk_related_products_args( $args ) {
+
+		$args['posts_per_page'] = 3; // 4 related products
+		$args['columns'] = 3; // arranged in 2 columns
+		return $args;
+	}
 }
 
 
