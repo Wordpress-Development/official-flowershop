@@ -137,7 +137,7 @@ Thank you for using our WordPress Themes. If need additional support you are wel
 http://officialtheme.com/support
 
 ## Changelog
-* 1.0.0 - February 22 2016 (Initial Release)
+Please check [CHANGELOG](CHANGELOG.md)
 
 
 ## Credits
